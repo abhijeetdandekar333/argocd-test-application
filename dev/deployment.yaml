@@ -52,14 +52,3 @@ spec:
   selector:
     app: sre-java
 ---
-kind: Route
-apiVersion: route.openshift.io/v1
-metadata:
-  name: test
-spec:
-  to:
-    kind: Service
-    name: sre-java-svc-monitoring
-    weight: 100
-  port:
-    targetPort: 9080-metrics

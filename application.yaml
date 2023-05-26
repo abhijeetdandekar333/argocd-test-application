@@ -12,7 +12,7 @@ spec:
                 path: dev
         destination:
                 server: https://kubernetes.default.svc
-                namespace: argcdapp
+                namespace: myappomkar
         syncPolicy:
                 syncOptions:
                         - CreateNamespace=true
